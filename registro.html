@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="left">
+        <h2>Se parte de nuestro equipo</h2>
+        <h2>Regístrate</h2>
+        <img src="./icon.png" alt="Cohete" />
+      </div>
+      <div class="right">
+        <nav class="nav">
+          <ul>
+            <a class="nav-a" href="registro.html"
+              ><li class="nav-li left-li">Regístrate</li></a
+            >
+            <a class="nav-a" href="sesion.html"
+              ><li class="nav-li right-li">Inicia Sesión</li></a
+            >
+          </ul>
+        </nav>
+        <form
+          action="https://formspree.io/f/xjvljero"
+          method="post"
+          autocomplete="on"
+        >
+          <label class="l-controls" for="">Nombre Completo</label>
+          <input
+            class="controls"
+            type="text"
+            name="name"
+            placeholder="Ingresa tu Nombre"
+          />
+          <label class="l-controls" for="">Usuario</label>
+          <input
+            class="controls"
+            type="text"
+            name="user"
+            placeholder="Ingresa tu Usuario"
+          />
+          <label class="l-controls" for="">Contraseña</label>
+          <input
+            class="controls"
+            type="password"
+            name="password"
+            placeholder="Ingresa tu Contraseña"
+          />
+          <label class="l-controls" for="">Confirmar Contraseña</label>
+          <input
+            class="controls"
+            type="password"
+            name="repPassword"
+            placeholder="Confirma tu Contraseña"
+          />
+          <label class="l-controls" for="">Email</label>
+          <input
+            class="controls"
+            type="email"
+            name="email"
+            placeholder="Ingresa tu E-mail"
+          />
+
+          <p>
+            <input class="controls terms" type="checkbox" name="terms" />Estoy
+            de acuerdo con los <a>Términos y Condiciones</a>
+          </p>
+          <input class="boton" type="submit" value="Regístrate" />
+          <p><a href="sesion.html">¿Ya tengo cuenta?</a></p>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
